@@ -11,14 +11,20 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+// stampa i numeri da 0 a 4
+// nessun errore di sintassi
+// il segno è sbagliato in quanto la condizione è sbagliata già in partenza
+for (let i = 0; i /*>*/ < 5; i++) {
     console.log(i);
 }
 
 
 // ESERCIZIO 2
+// funzione per cui se il numero è divisibile per 2 ritorniamo il numero + 5 altrimenti solo il numero
+// usato indicatore di assegnazione invece che indicatore di uguaglianza
+// nessun errore di logica
 function addIfEven(num) {
-    if (num % 2 = 0) {
+    if (num % 2 /*=*/ ===  0) {
         return num + 5;
     }
     return num;
