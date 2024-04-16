@@ -25,7 +25,7 @@ const cars = [
     {
         manufacturer: 'Volkswagen',
         model: 'Golf',
-        type: 'Benzina'
+        type: 'benzina' /*'Benzina'*/ //maiuscolo
     },
     {
         manufacturer: 'Fiat',
@@ -50,37 +50,37 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Kuga',
-        type: 'Diesel'
+        type: 'diesel' /*'Diesel'*/ //maiuscolo
     },
     {
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    }, //manca virgola
     {
         manufacturer: 'Audi',
         model: 'R8',
-        type: 'Benzina'
-    },
+        type: 'benzina' /*'Benzina'*/ //maiuscolo 
+    }/*,*/ // virgola inutile
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) /*>= arrow*/ => auto.type === 'benzina');
 
 const dieselCars = cars.filter( (auto) => {
     auto.type === 'diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type !== 'benzina' /*|| and e non or*/ && auto.type !== 'diesel';
 });
 
 console.log('Auto a benzina');
-console.log('*******************************');
 console.log(gasolineCars);
+console.log('*******************************');
 
 console.log('Auto a diesel');
-console.log('*******************************');
 console.log(dieselCars);
+console.log('*******************************');
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
