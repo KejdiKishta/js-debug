@@ -12,14 +12,18 @@ input.addEventListener('keypress', function(event) {
     //* dopo le condizioni push dell'input nell'array
     array./*add - per array è push*/push(input.value);
 
+    
     // console.log(array);
-
+    
     //* elemento da aggiungere nel DOM
     const li = document.createElement('li');
     li.classList.add('list-group-item');
     li./*text - manca inner*/innerText = input.value;
     //* stampa nel DOM
     document.querySelector('ul')./*push - si usa solo per gli array*/append(li);
+    
+    //* ripulisco l'input
+    input.value = "";
 
     //* variabile che conta le volte in cui viene ripetuto un elemento
     let counter = /*'' - per essere contatore deve essere un numero*/0;
