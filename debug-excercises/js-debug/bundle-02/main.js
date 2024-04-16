@@ -83,6 +83,7 @@ checkAccess();
 // grantAccess deve essere booleano
 // il controllo sui caratteri di userMail è meglio eseguirli fuori dal for in modo da verificarlo solamente una volta e non ad ogni indice dell'array
 // il risultato in console viene stampato a ogni iterazione perciò sarebbe meglio spostare fuori dal ciclo for l'if con i console log
+// a sto punto mi viene il dubbio che sia giusto l'apice al posto del backtick D:
 function checkAccessImproved() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
